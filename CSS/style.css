@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Just Another Hand', cursive;
+    box-sizing: border-box;
+    
+    background-color:#121d19 ;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+    color: #e2e4dc;
+    font-size: 50px;
+    
+}
+
+.logo{
+    border-radius: 50%;
+    width: 100px;
+    height:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    color: #e2e4dc;
+    display: grid;
+    place-items: center;
+
+
+}
+nav ul{
+    list-style-type: none;
+    
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #e2e4dc;
+    transition: 0.2s ease-in;
+    font-size: 30px;
+    
+}
+nav ul a:hover{
+    
+    color:#a1420d;
+}
+
+
+/* Items section*/
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap:20px;
+    grid-row-gap: 30px;
+}
+h3{
+    text-align: center;
+    padding: 20px;
+    color: #e2e4dc;
+    font-size: 30px;
+}
+
+.item img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 3rem;
+}
+.item img:hover{
+    transform: scale(1.08);
+}
+.item h4{
+    color: #e2e4dc;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+.item .button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: #e2e4dc;
+    color: #121d19;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+    text-align: center;
+    width:150px;
+    text-decoration: none;
+}
+.item .button:hover{
+    transform: scale(1.08);
+    background-color:#a1420d;
+    color: #e2e4dc;
+}
+
+@media screen and (max-width:1000px) {
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+.footer{
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+  
