@@ -6,6 +6,9 @@
     
     background-color:#121d19 ;
 }
+body{
+    margin-bottom:50px;
+}
 h1{
     text-align: center;
     padding: 20px;
@@ -115,15 +118,129 @@ h3{
     }
     
 }
-
+/*  */
+/*bottom*/
 .footer{
     position: bottom;
+    height: 50px;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 40px;
+    background:transparent;
+    padding: 10px;
+    
+}
+/*   position: bottom;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
     padding: 10px;
+    */
+  
+/* this is for the log in page */
+
+.form-box{
+    width:380px;
+    height: 480px;
+    position: relative;
+    margin: 3% auto;
+   
+    padding: 5px;
+    
 }
 
+.button-box{
+    width:220px;
+    margin: 30px auto;
+    position: relative;
+    
+   
+}
 
-  
+.toggle-button{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position:relative;
+    
+    color: #e2e4dc;
+    
+}
+
+#buttonLogIn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height:100%;
+    background:#a1420d;
+    border-radius: 30px;
+    transition: .5s;
+}
+#buttonRegister{
+     top: 0;
+    left: 110px;
+    position: absolute;
+    width: 110px;
+    height:100%;
+    background:#a1420d;
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.form-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #a1420d;
+    outline: none;
+    background: transparent;
+    color: #e2e4dc;
+}
+.submit-button{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 0;
+    outline: none;
+    border-radius: 30px ;
+    background:#a1420d;
+    color: #e2e4dc;
+}
+
+.check-box{
+    margin: 30px 10px 30px 0;
+
+}
+span{
+    color:#a1420d;
+    font-size: 12px;
+    border: 68px;
+    
+}
+
+#login{
+    left: 50px;
+    
+}
+
+#register{
+    left: 450px;
+    
+}
