@@ -22,12 +22,12 @@
 <div>
 <?php
            session_start();
-
+            $_SESSION;
 
         include("connection.php");
         include("functions.php");
 
-      //  $user_data = check_login($con);
+    
 
 
        
@@ -35,7 +35,8 @@
     </div>
 
     <section class="items">
-
+<br>
+ 
         <div class="item">
             <img src="/Projects/geco_cafe/IMG/pizza.jpg"> </img>
             <h4>Pizza</h4>
