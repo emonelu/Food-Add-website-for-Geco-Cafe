@@ -15,6 +15,7 @@
             <a href="/Projects/geco_cafe/index.php"><li>Home</li></a>
             <a href="/Projects/geco_cafe/order.php"><li>Order</li></a>
             <a href="/Projects/geco_cafe/about.php"><li>About Us</li></a>
+            <a href="/Projects/geco_cafe/logout.php"><li>logout</li></a>
         </ul>
     </nav>
 
@@ -22,21 +23,22 @@
 <div>
 <?php
            session_start();
-            $_SESSION;
+           $_SESSION;
+
 
         include("connection.php");
         include("functions.php");
 
-    
+        $user_data = check_login($con);
 
 
        
         ?>
     </div>
+    Hello, <?php echo $user_data['user_name']; ?>
 
     <section class="items">
-<br>
- 
+
         <div class="item">
             <img src="/Projects/geco_cafe/IMG/pizza.jpg"> </img>
             <h4>Pizza</h4>
