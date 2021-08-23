@@ -23,19 +23,19 @@
 <div>
 <?php
            session_start();
-           $_SESSION;
+      
 
 
         include("connection.php");
         include("functions.php");
 
-        $user_data = check_login($con);
+        $user_data = check_login();
 
 
        
         ?>
     </div>
-    Hello, <?php echo $user_data['user_name']; ?>
+    Hello, <?php echo $_SESSION['user_name']; ?>
 
     <section class="items">
 

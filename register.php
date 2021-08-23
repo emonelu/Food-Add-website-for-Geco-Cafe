@@ -30,14 +30,14 @@
             if ($_SERVER['REQUEST_METHOD'] == "POST")
             {
                 //something was posted
-               $user_name= $_POST['user_name']; //user name or user id, something must work 
+               $user_name= $_POST['user_name'];
             
                $password = $_POST['password'];
 
                 if(!empty($user_name) && !empty($password) && !is_numeric($user_name)) // deleted the email 
                {
-                    $user_id = uniqid(50); 
-                    $query ="insert into users (user_id, user_name, password) values('$user_id','$user_name', '$password')";
+                    
+                    $query ="insert into users (user_name, password) values('$user_name', '$password')";
                     mysqli_query($con, $query); 
 
                     header("Location: /Projects/geco_cafe/logInPage.php");
