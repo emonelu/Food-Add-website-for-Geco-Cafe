@@ -13,7 +13,7 @@
     <nav>
         <ul>
             <a href="/Projects/geco_cafe/index.php"><li>Home</li></a>
-            <a href="/Projects/geco_cafe/order.php"><li>Order</li></a>
+            <a href="/Projects/geco_cafe/cart.php"><li>cart</li></a>
             <a href="/Projects/geco_cafe/about.php"><li>About Us</li></a>
         </ul>
     </nav>

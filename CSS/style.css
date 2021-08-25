@@ -9,6 +9,12 @@
 body{
     margin-bottom:50px;
 }
+img{
+    max: width 100%;
+    height: auto;
+    object-fit:cover;
+    object-position: 50% 50%;
+}
 h1{
     text-align: center;
     padding: 20px;
@@ -88,8 +94,8 @@ h3{
     padding: 5px 30px;
     border: none;
     outline: none;
-    background-color: #e2e4dc;
-    color: #121d19;
+    background-color: #e2e4dc !important;
+    color: #121d19 !important;
     border-radius: 4px;
     font-size: 20px;
     display: block;
@@ -101,7 +107,7 @@ h3{
 }
 .item .button:hover{
     transform: scale(1.08);
-    background-color:#a1420d;
+    background-color:#a1420d !important;
     color: #e2e4dc;
 }
 
@@ -243,4 +249,45 @@ span{
 #register{
     left: 450px;
     
+}
+
+
+
+#table, th, td {
+    border: 1px solid rgb(255, 255, 255);
+    text-align: left;
+}
+
+.dashboard-cards{
+    border: 1px solid rgb(255, 255, 255);
+    display: inline-block;
+    text-align: center;
+    padding:.25em;
+}
+.form_label{
+   display: block;
+}
+.form_input{
+    border-radius: 30px;
+    padding:.25em;
+    border: 1px solid rgb(255, 255, 255);
+    outline:none;
+
+}
+
+.form_submit{
+    display:block;
+    background-color: #a1420d !important;
+    margin:1em ;
+    padding:.245em;
+    border :1px solid transparent !important;
+}
+.form_submit:hover,
+.form_submit:focus{
+    background-color: transparent !important;
+    transition-duration: .5s;
+    border :1px solid #a1420d !important;
+}
+.shopping-image{
+    width:2em !important;
 }

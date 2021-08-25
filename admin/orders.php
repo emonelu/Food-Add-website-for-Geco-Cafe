@@ -30,8 +30,8 @@
       
 
 
-        include("/Projects/geco_cafe/connection.php");
-        include("/Projects/geco_cafe/functions.php");
+        include("../connection.php");
+        include("../functions.php");
 
         $user_data = check_login();
 

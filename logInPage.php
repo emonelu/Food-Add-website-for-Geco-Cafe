@@ -56,6 +56,7 @@
                         if ($user_data['password'] === $password) 
                         {
                             $_SESSION['user_name'] = $user_data['user_name'];
+                            $_SESSION['user_Id']=$user_data['id'];
                             header("Location: /Projects/geco_cafe/index.php");
                         }
                         else{

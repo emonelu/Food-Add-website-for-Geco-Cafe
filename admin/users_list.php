@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Users</title>
     <link rel="stylesheet" href="/Projects/geco_cafe/CSS/style.css">
+   
 </head>
 <body>
 <h1>Geco Café</h1>
@@ -22,29 +23,58 @@
 
 
 
-    <h1>Test User list</h1>
-
-
+    <h1> User list</h1>
     <?php
-           session_start();
-      
-
-
-        include("/Projects/geco_cafe/connection.php");
-        include("/Projects/geco_cafe/functions.php");
-
-        $user_data = check_login();
-
-
-       
+        session_start();
+        require_once("../connection.php");
+        require_once("../functions.php");
         ?>
-    </div>
-    Hello, <?php echo $_SESSION['user_name']; ?>
+
 
 
 
 <!-- Here we addd the side menu, this must be static  -->
 
+
+<table style="width:100%;">
+<thead>
+        <tr>
+            <th>ID</th>
+            <th>User Name</th>
+            <th>Password</th>
+            <th>Date of registration</th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php
+        
+        $sql = "SELECT * FROM `users` ORDER BY `user_name` DESC";
+        $result = $con->query($sql);
+        
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+       
+        ?>
+        <tr>
+            <td><?php echo $row['id'];  ?></td>
+            <td><?php echo $row['user_name']; ?></td>
+            <td><?php echo $row['password']; ?></td>
+            <td><?php echo $row['date']; ?></td>
+            <td><a class="table-link">update</a></td>
+            <td><a class="table-link">delete</a></td>
+            
+        </tr>
+         
+        </tbody>
+   
+        <?php
+        }
+    } else {
+        echo "<tr><td>No users in  the database</td></tr>";
+    }
+        ?>
+    </table>
 
 
 
